@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Intake_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>CarAccompaniment__c</fullName>
+        <externalId>false</externalId>
+        <label>Car Accompaniment</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YesNo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ChildWelfare__c</fullName>
+        <externalId>false</externalId>
+        <label>Child Welfare</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YesNo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ClientIdentifiedNeedsOther__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Identified Needs Other</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClientIdentifiedNeeds__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Identified Needs</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Address Confidentiality Program</fullName>
+                    <default>false</default>
+                    <label>Address Confidentiality Program</label>
+                </value>
+                <value>
+                    <fullName>Chaplain/Spiritual Support</fullName>
+                    <default>false</default>
+                    <label>Chaplain/Spiritual Support</label>
+                </value>
+                <value>
+                    <fullName>Child Welfare Reporting</fullName>
+                    <default>false</default>
+                    <label>Child Welfare Reporting</label>
+                </value>
+                <value>
+                    <fullName>Computer Lab</fullName>
+                    <default>false</default>
+                    <label>Computer Lab</label>
+                </value>
+                <value>
+                    <fullName>Cultural Support</fullName>
+                    <default>false</default>
+                    <label>Cultural Support</label>
+                </value>
+                <value>
+                    <fullName>Domestic Violence</fullName>
+                    <default>false</default>
+                    <label>Domestic Violence</label>
+                </value>
+                <value>
+                    <fullName>Emotional Support for Self/Children</fullName>
+                    <default>false</default>
+                    <label>Emotional Support for Self/Children</label>
+                </value>
+                <value>
+                    <fullName>Essential Needs</fullName>
+                    <default>false</default>
+                    <label>Essential Needs</label>
+                </value>
+                <value>
+                    <fullName>Forensic Exam (SANE or DV)</fullName>
+                    <default>false</default>
+                    <label>Forensic Exam (SANE or DV)</label>
+                </value>
+                <value>
+                    <fullName>Health/Wellness</fullName>
+                    <default>false</default>
+                    <label>Health/Wellness</label>
+                </value>
+                <value>
+                    <fullName>Housing Assistance</fullName>
+                    <default>false</default>
+                    <label>Housing Assistance</label>
+                </value>
+                <value>
+                    <fullName>Legal Assistance</fullName>
+                    <default>false</default>
+                    <label>Legal Assistance</label>
+                </value>
+                <value>
+                    <fullName>Military Affiliation Services</fullName>
+                    <default>false</default>
+                    <label>Military Affiliation Services</label>
+                </value>
+                <value>
+                    <fullName>Parenting</fullName>
+                    <default>false</default>
+                    <label>Parenting</label>
+                </value>
+                <value>
+                    <fullName>Sexual Violence</fullName>
+                    <default>false</default>
+                    <label>Sexual Violence</label>
+                </value>
+                <value>
+                    <fullName>Shelter</fullName>
+                    <default>false</default>
+                    <label>Shelter</label>
+                </value>
+                <value>
+                    <fullName>Stalking</fullName>
+                    <default>false</default>
+                    <label>Stalking</label>
+                </value>
+                <value>
+                    <fullName>Support for a Friend/Loved One</fullName>
+                    <default>false</default>
+                    <label>Support for a Friend/Loved One</label>
+                </value>
+                <value>
+                    <fullName>Transportation Assistance</fullName>
+                    <default>false</default>
+                    <label>Transportation Assistance</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Assistance Establishing Child Visitation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Assistance Establishing Child Visitation</label>
+                </value>
+                <value>
+                    <fullName>Child Welfare Report</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Child Welfare Report</label>
+                </value>
+                <value>
+                    <fullName>Children&apos;s Basic Needs Assistance</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Children&apos;s Basic Needs Assistance</label>
+                </value>
+                <value>
+                    <fullName>Divorce, Custody, and/or U-Visa</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Divorce, Custody, and/or U-Visa</label>
+                </value>
+                <value>
+                    <fullName>Dropping Charges</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Dropping Charges</label>
+                </value>
+                <value>
+                    <fullName>Dropping a VPO</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Dropping a VPO</label>
+                </value>
+                <value>
+                    <fullName>Emergency Shelter</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Emergency Shelter</label>
+                </value>
+                <value>
+                    <fullName>Emotional Support - Advocacy</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Emotional Support - Advocacy</label>
+                </value>
+                <value>
+                    <fullName>Emotional Support - Support Group</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Emotional Support - Support Group</label>
+                </value>
+                <value>
+                    <fullName>Emotional Support - Therapy</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Emotional Support - Therapy</label>
+                </value>
+                <value>
+                    <fullName>Food Assistance</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Food Assistance</label>
+                </value>
+                <value>
+                    <fullName>Forensic Exam (SANE or DVFE)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Forensic Exam (SANE or DVFE)</label>
+                </value>
+                <value>
+                    <fullName>Health and Wellness</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Health and Wellness</label>
+                </value>
+                <value>
+                    <fullName>Medical Concerns</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Medical Concerns</label>
+                </value>
+                <value>
+                    <fullName>Parenting Classes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Parenting Classes</label>
+                </value>
+                <value>
+                    <fullName>Speak with a Detective</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Speak with a Detective</label>
+                </value>
+                <value>
+                    <fullName>Support Friend or Loved One</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Support Friend or Loved One</label>
+                </value>
+                <value>
+                    <fullName>Tribal Information and Support</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Tribal Information and Support</label>
+                </value>
+                <value>
+                    <fullName>VPO Assistance</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>VPO Assistance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Completed__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Consent_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Consent Status</label>
+        <length>128</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Intake Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>HearAboutUs__c</fullName>
+        <externalId>false</externalId>
+        <label>Hear About Us</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Media(Newspaper, Magazine, TV, etc.)</fullName>
+                    <default>false</default>
+                    <label>Media(Newspaper, Magazine, TV, etc.)</label>
+                </value>
+                <value>
+                    <fullName>Online Search</fullName>
+                    <default>false</default>
+                    <label>Online Search</label>
+                </value>
+                <value>
+                    <fullName>Police</fullName>
+                    <default>false</default>
+                    <label>Police</label>
+                </value>
+                <value>
+                    <fullName>Family/Friend</fullName>
+                    <default>false</default>
+                    <label>Family/Friend</label>
+                </value>
+                <value>
+                    <fullName>Social Media</fullName>
+                    <default>false</default>
+                    <label>Social Media</label>
+                </value>
+                <value>
+                    <fullName>Outreach Presentation/Event</fullName>
+                    <default>false</default>
+                    <label>Outreach Presentation/Event</label>
+                </value>
+                <value>
+                    <fullName>Partner Agency</fullName>
+                    <default>false</default>
+                    <label>Partner Agency</label>
+                </value>
+                <value>
+                    <fullName>Faith-Based Organization</fullName>
+                    <default>false</default>
+                    <label>Faith-Based Organization</label>
+                </value>
+                <value>
+                    <fullName>YWCA</fullName>
+                    <default>false</default>
+                    <label>YWCA</label>
+                </value>
+                <value>
+                    <fullName>OCPD</fullName>
+                    <default>false</default>
+                    <label>OCPD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IfNotServedReferral__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral If Not Served</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IncidentCityOther__c</fullName>
+        <externalId>false</externalId>
+        <label>Incident City Other</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IncidentCity__c</fullName>
+        <externalId>false</externalId>
+        <label>Incident City</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Oklahoma City</fullName>
+                    <default>false</default>
+                    <label>Oklahoma City</label>
+                </value>
+                <value>
+                    <fullName>Norman</fullName>
+                    <default>false</default>
+                    <label>Norman</label>
+                </value>
+                <value>
+                    <fullName>Edmond</fullName>
+                    <default>false</default>
+                    <label>Edmond</label>
+                </value>
+                <value>
+                    <fullName>Moore</fullName>
+                    <default>false</default>
+                    <label>Moore</label>
+                </value>
+                <value>
+                    <fullName>Shawnee</fullName>
+                    <default>false</default>
+                    <label>Shawnee</label>
+                </value>
+                <value>
+                    <fullName>Yukon</fullName>
+                    <default>false</default>
+                    <label>Yukon</label>
+                </value>
+                <value>
+                    <fullName>El Reno</fullName>
+                    <default>false</default>
+                    <label>El Reno</label>
+                </value>
+                <value>
+                    <fullName>Guthrie</fullName>
+                    <default>false</default>
+                    <label>Guthrie</label>
+                </value>
+                <value>
+                    <fullName>Bethany</fullName>
+                    <default>false</default>
+                    <label>Bethany</label>
+                </value>
+                <value>
+                    <fullName>Midwest City</fullName>
+                    <default>false</default>
+                    <label>Midwest City</label>
+                </value>
+                <value>
+                    <fullName>Del City</fullName>
+                    <default>false</default>
+                    <label>Del City</label>
+                </value>
+                <value>
+                    <fullName>Noble</fullName>
+                    <default>false</default>
+                    <label>Noble</label>
+                </value>
+                <value>
+                    <fullName>Piedmont</fullName>
+                    <default>false</default>
+                    <label>Piedmont</label>
+                </value>
+                <value>
+                    <fullName>Little Axe</fullName>
+                    <default>false</default>
+                    <label>Little Axe</label>
+                </value>
+                <value>
+                    <fullName>Tribal Land</fullName>
+                    <default>false</default>
+                    <label>Tribal Land</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IncidentCounty__c</fullName>
+        <externalId>false</externalId>
+        <label>Incident County</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Oklahoma</fullName>
+                    <default>false</default>
+                    <label>Oklahoma</label>
+                </value>
+                <value>
+                    <fullName>Adair</fullName>
+                    <default>false</default>
+                    <label>Adair</label>
+                </value>
+                <value>
+                    <fullName>Alfalfa</fullName>
+                    <default>false</default>
+                    <label>Alfalfa</label>
+                </value>
+                <value>
+                    <fullName>Atoka</fullName>
+                    <default>false</default>
+                    <label>Atoka</label>
+                </value>
+                <value>
+                    <fullName>Beaver</fullName>
+                    <default>false</default>
+                    <label>Beaver</label>
+                </value>
+                <value>
+                    <fullName>Beckham</fullName>
+                    <default>false</default>
+                    <label>Beckham</label>
+                </value>
+                <value>
+                    <fullName>Blaine</fullName>
+                    <default>false</default>
+                    <label>Blaine</label>
+                </value>
+                <value>
+                    <fullName>Bryan</fullName>
+                    <default>false</default>
+                    <label>Bryan</label>
+                </value>
+                <value>
+                    <fullName>Caddo</fullName>
+                    <default>false</default>
+                    <label>Caddo</label>
+                </value>
+                <value>
+                    <fullName>Canadian</fullName>
+                    <default>false</default>
+                    <label>Canadian</label>
+                </value>
+                <value>
+                    <fullName>Carter</fullName>
+                    <default>false</default>
+                    <label>Carter</label>
+                </value>
+                <value>
+                    <fullName>Cherokee</fullName>
+                    <default>false</default>
+                    <label>Cherokee</label>
+                </value>
+                <value>
+                    <fullName>Choctaw</fullName>
+                    <default>false</default>
+                    <label>Choctaw</label>
+                </value>
+                <value>
+                    <fullName>Cimarron</fullName>
+                    <default>false</default>
+                    <label>Cimarron</label>
+                </value>
+                <value>
+                    <fullName>Cleveland</fullName>
+                    <default>false</default>
+                    <label>Cleveland</label>
+                </value>
+                <value>
+                    <fullName>Coal</fullName>
+                    <default>false</default>
+                    <label>Coal</label>
+                </value>
+                <value>
+                    <fullName>Comanche</fullName>
+                    <default>false</default>
+                    <label>Comanche</label>
+                </value>
+                <value>
+                    <fullName>Cotton</fullName>
+                    <default>false</default>
+                    <label>Cotton</label>
+                </value>
+                <value>
+                    <fullName>Craig</fullName>
+                    <default>false</default>
+                    <label>Craig</label>
+                </value>
+                <value>
+                    <fullName>Creek</fullName>
+                    <default>false</default>
+                    <label>Creek</label>
+                </value>
+                <value>
+                    <fullName>Custer</fullName>
+                    <default>false</default>
+                    <label>Custer</label>
+                </value>
+                <value>
+                    <fullName>Delaware</fullName>
+                    <default>false</default>
+                    <label>Delaware</label>
+                </value>
+                <value>
+                    <fullName>Dewey</fullName>
+                    <default>false</default>
+                    <label>Dewey</label>
+                </value>
+                <value>
+                    <fullName>Ellis</fullName>
+                    <default>false</default>
+                    <label>Ellis</label>
+                </value>
+                <value>
+                    <fullName>Garfield</fullName>
+                    <default>false</default>
+                    <label>Garfield</label>
+                </value>
+                <value>
+                    <fullName>Garvin</fullName>
+                    <default>false</default>
+                    <label>Garvin</label>
+                </value>
+                <value>
+                    <fullName>Grady</fullName>
+                    <default>false</default>
+                    <label>Grady</label>
+                </value>
+                <value>
+                    <fullName>Grant</fullName>
+                    <default>false</default>
+                    <label>Grant</label>
+                </value>
+                <value>
+                    <fullName>Greer</fullName>
+                    <default>false</default>
+                    <label>Greer</label>
+                </value>
+                <value>
+                    <fullName>Harmon</fullName>
+                    <default>false</default>
+                    <label>Harmon</label>
+                </value>
+                <value>
+                    <fullName>Harper</fullName>
+                    <default>false</default>
+                    <label>Harper</label>
+                </value>
+                <value>
+                    <fullName>Haskell</fullName>
+                    <default>false</default>
+                    <label>Haskell</label>
+                </value>
+                <value>
+                    <fullName>Hughes</fullName>
+                    <default>false</default>
+                    <label>Hughes</label>
+                </value>
+                <value>
+                    <fullName>Jackson</fullName>
+                    <default>false</default>
+                    <label>Jackson</label>
+                </value>
+                <value>
+                    <fullName>Jefferson</fullName>
+                    <default>false</default>
+                    <label>Jefferson</label>
+                </value>
+                <value>
+                    <fullName>Johnston</fullName>
+                    <default>false</default>
+                    <label>Johnston</label>
+                </value>
+                <value>
+                    <fullName>Kay</fullName>
+                    <default>false</default>
+                    <label>Kay</label>
+                </value>
+                <value>
+                    <fullName>Kingfisher</fullName>
+                    <default>false</default>
+                    <label>Kingfisher</label>
+                </value>
+                <value>
+                    <fullName>Kiowa</fullName>
+                    <default>false</default>
+                    <label>Kiowa</label>
+                </value>
+                <value>
+                    <fullName>Latimer</fullName>
+                    <default>false</default>
+                    <label>Latimer</label>
+                </value>
+                <value>
+                    <fullName>Le Flore</fullName>
+                    <default>false</default>
+                    <label>Le Flore</label>
+                </value>
+                <value>
+                    <fullName>Lincoln</fullName>
+                    <default>false</default>
+                    <label>Lincoln</label>
+                </value>
+                <value>
+                    <fullName>Logan</fullName>
+                    <default>false</default>
+                    <label>Logan</label>
+                </value>
+                <value>
+                    <fullName>Love</fullName>
+                    <default>false</default>
+                    <label>Love</label>
+                </value>
+                <value>
+                    <fullName>Major</fullName>
+                    <default>false</default>
+                    <label>Major</label>
+                </value>
+                <value>
+                    <fullName>Marshall</fullName>
+                    <default>false</default>
+                    <label>Marshall</label>
+                </value>
+                <value>
+                    <fullName>Mayes</fullName>
+                    <default>false</default>
+                    <label>Mayes</label>
+                </value>
+                <value>
+                    <fullName>McClain</fullName>
+                    <default>false</default>
+                    <label>McClain</label>
+                </value>
+                <value>
+                    <fullName>McCurtain</fullName>
+                    <default>false</default>
+                    <label>McCurtain</label>
+                </value>
+                <value>
+                    <fullName>McIntosh</fullName>
+                    <default>false</default>
+                    <label>McIntosh</label>
+                </value>
+                <value>
+                    <fullName>Murray</fullName>
+                    <default>false</default>
+                    <label>Murray</label>
+                </value>
+                <value>
+                    <fullName>Muskogee</fullName>
+                    <default>false</default>
+                    <label>Muskogee</label>
+                </value>
+                <value>
+                    <fullName>Noble</fullName>
+                    <default>false</default>
+                    <label>Noble</label>
+                </value>
+                <value>
+                    <fullName>Nowata</fullName>
+                    <default>false</default>
+                    <label>Nowata</label>
+                </value>
+                <value>
+                    <fullName>Okfuskee</fullName>
+                    <default>false</default>
+                    <label>Okfuskee</label>
+                </value>
+                <value>
+                    <fullName>Okmulgee</fullName>
+                    <default>false</default>
+                    <label>Okmulgee</label>
+                </value>
+                <value>
+                    <fullName>Osage</fullName>
+                    <default>false</default>
+                    <label>Osage</label>
+                </value>
+                <value>
+                    <fullName>Ottawa</fullName>
+                    <default>false</default>
+                    <label>Ottawa</label>
+                </value>
+                <value>
+                    <fullName>Pawnee</fullName>
+                    <default>false</default>
+                    <label>Pawnee</label>
+                </value>
+                <value>
+                    <fullName>Payne</fullName>
+                    <default>false</default>
+                    <label>Payne</label>
+                </value>
+                <value>
+                    <fullName>Pittsburg</fullName>
+                    <default>false</default>
+                    <label>Pittsburg</label>
+                </value>
+                <value>
+                    <fullName>Pontotoc</fullName>
+                    <default>false</default>
+                    <label>Pontotoc</label>
+                </value>
+                <value>
+                    <fullName>Pottawatome</fullName>
+                    <default>false</default>
+                    <label>Pottawatome</label>
+                </value>
+                <value>
+                    <fullName>Pushmataha</fullName>
+                    <default>false</default>
+                    <label>Pushmataha</label>
+                </value>
+                <value>
+                    <fullName>Roger Mills</fullName>
+                    <default>false</default>
+                    <label>Roger Mills</label>
+                </value>
+                <value>
+                    <fullName>Rogers</fullName>
+                    <default>false</default>
+                    <label>Rogers</label>
+                </value>
+                <value>
+                    <fullName>Seminole</fullName>
+                    <default>false</default>
+                    <label>Seminole</label>
+                </value>
+                <value>
+                    <fullName>Sequoyah</fullName>
+                    <default>false</default>
+                    <label>Sequoyah</label>
+                </value>
+                <value>
+                    <fullName>Stephens</fullName>
+                    <default>false</default>
+                    <label>Stephens</label>
+                </value>
+                <value>
+                    <fullName>Texas</fullName>
+                    <default>false</default>
+                    <label>Texas</label>
+                </value>
+                <value>
+                    <fullName>Tillman</fullName>
+                    <default>false</default>
+                    <label>Tillman</label>
+                </value>
+                <value>
+                    <fullName>Tulsa</fullName>
+                    <default>false</default>
+                    <label>Tulsa</label>
+                </value>
+                <value>
+                    <fullName>Wagoner</fullName>
+                    <default>false</default>
+                    <label>Wagoner</label>
+                </value>
+                <value>
+                    <fullName>Washington</fullName>
+                    <default>false</default>
+                    <label>Washington</label>
+                </value>
+                <value>
+                    <fullName>Washita</fullName>
+                    <default>false</default>
+                    <label>Washita</label>
+                </value>
+                <value>
+                    <fullName>Woods</fullName>
+                    <default>false</default>
+                    <label>Woods</label>
+                </value>
+                <value>
+                    <fullName>Woodward</fullName>
+                    <default>false</default>
+                    <label>Woodward</label>
+                </value>
+                <value>
+                    <fullName>Outside the State of Oklahoma</fullName>
+                    <default>false</default>
+                    <label>Outside the State of Oklahoma</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LinkToCase__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case__c</referenceTo>
+        <relationshipLabel>Intakes</relationshipLabel>
+        <relationshipName>Intakes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>NotesExpanded__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes Expanded</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Outcome</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Served</fullName>
+                    <default>false</default>
+                    <label>Served</label>
+                </value>
+                <value>
+                    <fullName>Not Served</fullName>
+                    <default>false</default>
+                    <label>Not Served</label>
+                </value>
+                <value>
+                    <fullName>Partially Served</fullName>
+                    <default>false</default>
+                    <label>Partially Served</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PartialOrNoService__c</fullName>
+        <externalId>false</externalId>
+        <label>Partial or No Service</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Partially Served</fullName>
+                    <default>false</default>
+                    <label>Partially Served</label>
+                </value>
+                <value>
+                    <fullName>Not Served</fullName>
+                    <default>false</default>
+                    <label>Not Served</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PoliceReportNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Police Report Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PoliceResponse__c</fullName>
+        <externalId>false</externalId>
+        <label>Police Response</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>YesNo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PrimaryVictimizationsOther__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Victimizations (Other)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryVictimizations__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Victimizations</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Victimizations</valueSetName>
+        </valueSet>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ReasonsForPartialOrNoServiceOther__c</fullName>
+        <externalId>false</externalId>
+        <label>Reasons For Partial Or No Service Other</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReasonsForPartialOrNoService__c</fullName>
+        <externalId>false</externalId>
+        <label>Reasons For Partial Or No Service</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Program Reached Capacity</fullName>
+                    <default>false</default>
+                    <label>Program Reached Capacity</label>
+                </value>
+                <value>
+                    <fullName>Need Not Documented</fullName>
+                    <default>false</default>
+                    <label>Need Not Documented</label>
+                </value>
+                <value>
+                    <fullName>Did Not Meet Eligibility</fullName>
+                    <default>false</default>
+                    <label>Did Not Meet Eligibility</label>
+                </value>
+                <value>
+                    <fullName>Program Rules Unacceptable to Survivor</fullName>
+                    <default>false</default>
+                    <label>Program Rules Unacceptable to Survivor</label>
+                </value>
+                <value>
+                    <fullName>Services Not Appropriate for Survivor</fullName>
+                    <default>false</default>
+                    <label>Services Not Appropriate for Survivor</label>
+                </value>
+                <value>
+                    <fullName>Transportation Problems</fullName>
+                    <default>false</default>
+                    <label>Transportation Problems</label>
+                </value>
+                <value>
+                    <fullName>Conflict of Interest</fullName>
+                    <default>false</default>
+                    <label>Conflict of Interest</label>
+                </value>
+                <value>
+                    <fullName>Services Inappropriate- Substance Abuse</fullName>
+                    <default>false</default>
+                    <label>Services Inappropriate- Substance Abuse</label>
+                </value>
+                <value>
+                    <fullName>Services Inappropriate- Mental Health</fullName>
+                    <default>false</default>
+                    <label>Services Inappropriate- Mental Health</label>
+                </value>
+                <value>
+                    <fullName>Inadequate Language Capacity</fullName>
+                    <default>false</default>
+                    <label>Inadequate Language Capacity</label>
+                </value>
+                <value>
+                    <fullName>Geographic/Other Isolation of Survivor</fullName>
+                    <default>false</default>
+                    <label>Geographic/Other Isolation of Survivor</label>
+                </value>
+                <value>
+                    <fullName>Geographic or other isolation of victim/survivor</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Geographic or other isolation of victim/survivor</label>
+                </value>
+                <value>
+                    <fullName>Inadequate language capacity (including sign language)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Inadequate language capacity (including sign language)</label>
+                </value>
+                <value>
+                    <fullName>Program rules not acceptable to victim/survivor</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Program rules not acceptable to victim/survivor</label>
+                </value>
+                <value>
+                    <fullName>Services inappropriate or inadequate for victims/survivors with mental health problems</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Services inappropriate or inadequate for victims/survivors with mental health problems</label>
+                </value>
+                <value>
+                    <fullName>Services inappropriate or inadequate for victims/survivors with substance abuse problems</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Services inappropriate or inadequate for victims/survivors with substance abuse problems</label>
+                </value>
+                <value>
+                    <fullName>Services not appropriate for victim/survivor</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Services not appropriate for victim/survivor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ReferralsUtilizedOther__c</fullName>
+        <externalId>false</externalId>
+        <label>Referrals Utilized Other</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReferralsUtilized__c</fullName>
+        <externalId>false</externalId>
+        <label>Referrals Utilized</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Referral to on-site partner program</fullName>
+                    <default>false</default>
+                    <label>Referral to on-site partner program</label>
+                </value>
+                <value>
+                    <fullName>Referral to off-site program</fullName>
+                    <default>false</default>
+                    <label>Referral to off-site program</label>
+                </value>
+                <value>
+                    <fullName>Relocation assistance</fullName>
+                    <default>false</default>
+                    <label>Relocation assistance</label>
+                </value>
+                <value>
+                    <fullName>Emergency financial assistance</fullName>
+                    <default>false</default>
+                    <label>Emergency financial assistance</label>
+                </value>
+                <value>
+                    <fullName>Crisis intervention (safety planning)</fullName>
+                    <default>false</default>
+                    <label>Crisis intervention (safety planning)</label>
+                </value>
+                <value>
+                    <fullName>On-scene crisis response</fullName>
+                    <default>false</default>
+                    <label>On-scene crisis response</label>
+                </value>
+                <value>
+                    <fullName>Child or dependent care assistance</fullName>
+                    <default>false</default>
+                    <label>Child or dependent care assistance</label>
+                </value>
+                <value>
+                    <fullName>Transportation assistance</fullName>
+                    <default>false</default>
+                    <label>Transportation assistance</label>
+                </value>
+                <value>
+                    <fullName>Interpreter services</fullName>
+                    <default>false</default>
+                    <label>Interpreter services</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SecondaryVictimizationsOther__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Victimizations (Other)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SecondaryVictimizations__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Victimizations</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adult Physical Assault – Non-DV – Without a weapon</fullName>
+                    <default>false</default>
+                    <label>Adult Physical Assault – Non-DV – Without a weapon</label>
+                </value>
+                <value>
+                    <fullName>Adult Physical Assault – Non-DV – With a weapon</fullName>
+                    <default>false</default>
+                    <label>Adult Physical Assault – Non-DV – With a weapon</label>
+                </value>
+                <value>
+                    <fullName>Adult Sexual Assault</fullName>
+                    <default>false</default>
+                    <label>Adult Sexual Assault</label>
+                </value>
+                <value>
+                    <fullName>Adult Sexually Abused/Assaulted as a Child</fullName>
+                    <default>false</default>
+                    <label>Adult Sexually Abused/Assaulted as a Child</label>
+                </value>
+                <value>
+                    <fullName>Arson</fullName>
+                    <default>false</default>
+                    <label>Arson</label>
+                </value>
+                <value>
+                    <fullName>Bullying – Non-DV – Verbal</fullName>
+                    <default>false</default>
+                    <label>Bullying – Non-DV – Verbal</label>
+                </value>
+                <value>
+                    <fullName>Bullying – Non DV – Cyber</fullName>
+                    <default>false</default>
+                    <label>Bullying – Non DV – Cyber</label>
+                </value>
+                <value>
+                    <fullName>Bullying – Non DV – Physical</fullName>
+                    <default>false</default>
+                    <label>Bullying – Non DV – Physical</label>
+                </value>
+                <value>
+                    <fullName>Burglary</fullName>
+                    <default>false</default>
+                    <label>Burglary</label>
+                </value>
+                <value>
+                    <fullName>Child Physical Abuse</fullName>
+                    <default>false</default>
+                    <label>Child Physical Abuse</label>
+                </value>
+                <value>
+                    <fullName>Child Neglect</fullName>
+                    <default>false</default>
+                    <label>Child Neglect</label>
+                </value>
+                <value>
+                    <fullName>Child Pornography</fullName>
+                    <default>false</default>
+                    <label>Child Pornography</label>
+                </value>
+                <value>
+                    <fullName>Child Sexual Abuse/Assault – Stranger</fullName>
+                    <default>false</default>
+                    <label>Child Sexual Abuse/Assault – Stranger</label>
+                </value>
+                <value>
+                    <fullName>Child Sexual Abuse/Assault – Non-Stranger</fullName>
+                    <default>false</default>
+                    <label>Child Sexual Abuse/Assault – Non-Stranger</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Cultural / Spiritual Abuse</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Cultural / Spiritual Abuse</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Emotional / Psychological / Intellectual Abuse</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Emotional / Psychological / Intellectual Abuse</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Financial Abuse</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Financial Abuse</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Pet Abuse</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Pet Abuse</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Physical Abuse</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Physical Abuse</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Physical Abuse – Strangulation</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Physical Abuse – Strangulation</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Physical Abuse – With a weapon</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Physical Abuse – With a weapon</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Destruction of Property</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Destruction of Property</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Social Abuse / Isolation</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Social Abuse / Isolation</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Using Children to Abuse</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Using Children to Abuse</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Verbal Abuse</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Verbal Abuse</label>
+                </value>
+                <value>
+                    <fullName>Domestic and/or Family Violence – Verbal Abuse – Death Threats (homicidal/suicidal)</fullName>
+                    <default>false</default>
+                    <label>Domestic and/or Family Violence – Verbal Abuse – Death Threats (homicidal/suicidal)</label>
+                </value>
+                <value>
+                    <fullName>DUI / DWI</fullName>
+                    <default>false</default>
+                    <label>DUI / DWI</label>
+                </value>
+                <value>
+                    <fullName>Elder Abuse</fullName>
+                    <default>false</default>
+                    <label>Elder Abuse</label>
+                </value>
+                <value>
+                    <fullName>Elder Neglect</fullName>
+                    <default>false</default>
+                    <label>Elder Neglect</label>
+                </value>
+                <value>
+                    <fullName>Hate Crime – Racial</fullName>
+                    <default>false</default>
+                    <label>Hate Crime – Racial</label>
+                </value>
+                <value>
+                    <fullName>Hate Crime – Religious</fullName>
+                    <default>false</default>
+                    <label>Hate Crime – Religious</label>
+                </value>
+                <value>
+                    <fullName>Hate Crime – Gender</fullName>
+                    <default>false</default>
+                    <label>Hate Crime – Gender</label>
+                </value>
+                <value>
+                    <fullName>Hate Crime – Sexual Orientation</fullName>
+                    <default>false</default>
+                    <label>Hate Crime – Sexual Orientation</label>
+                </value>
+                <value>
+                    <fullName>Hate Crime – Other (explain in text box)</fullName>
+                    <default>false</default>
+                    <label>Hate Crime – Other (explain in text box)</label>
+                </value>
+                <value>
+                    <fullName>Human Trafficking – Labor</fullName>
+                    <default>false</default>
+                    <label>Human Trafficking – Labor</label>
+                </value>
+                <value>
+                    <fullName>Human Trafficking – Sex</fullName>
+                    <default>false</default>
+                    <label>Human Trafficking – Sex</label>
+                </value>
+                <value>
+                    <fullName>Identity Theft / Fraud / Financial Crime – Non-DV</fullName>
+                    <default>false</default>
+                    <label>Identity Theft / Fraud / Financial Crime – Non-DV</label>
+                </value>
+                <value>
+                    <fullName>Kidnapping – Non-Custodial</fullName>
+                    <default>false</default>
+                    <label>Kidnapping – Non-Custodial</label>
+                </value>
+                <value>
+                    <fullName>Kidnapping – Custodial</fullName>
+                    <default>false</default>
+                    <label>Kidnapping – Custodial</label>
+                </value>
+                <value>
+                    <fullName>Mass Violence – Domestic</fullName>
+                    <default>false</default>
+                    <label>Mass Violence – Domestic</label>
+                </value>
+                <value>
+                    <fullName>Mass Violence – International</fullName>
+                    <default>false</default>
+                    <label>Mass Violence – International</label>
+                </value>
+                <value>
+                    <fullName>Vehicular Victimization</fullName>
+                    <default>false</default>
+                    <label>Vehicular Victimization</label>
+                </value>
+                <value>
+                    <fullName>Robbery</fullName>
+                    <default>false</default>
+                    <label>Robbery</label>
+                </value>
+                <value>
+                    <fullName>Stalking</fullName>
+                    <default>false</default>
+                    <label>Stalking</label>
+                </value>
+                <value>
+                    <fullName>Harassment</fullName>
+                    <default>false</default>
+                    <label>Harassment</label>
+                </value>
+                <value>
+                    <fullName>Survivor of Homicide Victim</fullName>
+                    <default>false</default>
+                    <label>Survivor of Homicide Victim</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Cultural / Spiritual Abuse</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Cultural / Spiritual Abuse</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Emotional / Psychological / Intellectual Abuse</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Emotional / Psychological / Intellectual Abuse</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Pet Abuse</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Pet Abuse</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Physical Abuse</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Physical Abuse</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Physical Abuse – Strangulation</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Physical Abuse – Strangulation</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Physical Abuse – With a weapon</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Physical Abuse – With a weapon</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Destruction of Property</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Destruction of Property</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Social Abuse / Isolation</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Social Abuse / Isolation</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Verbal Abuse</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Verbal Abuse</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Victimization – Verbal Abuse – Death Threats (homicidal/suicidal)</fullName>
+                    <default>false</default>
+                    <label>Teen Dating Victimization – Verbal Abuse – Death Threats (homicidal/suicidal)</label>
+                </value>
+                <value>
+                    <fullName>Terrorism – Domestic</fullName>
+                    <default>false</default>
+                    <label>Terrorism – Domestic</label>
+                </value>
+                <value>
+                    <fullName>Terrorism – International</fullName>
+                    <default>false</default>
+                    <label>Terrorism – International</label>
+                </value>
+                <value>
+                    <fullName>Violation of a Court (Protective) Order</fullName>
+                    <default>false</default>
+                    <label>Violation of a Court (Protective) Order</label>
+                </value>
+                <value>
+                    <fullName>Other Victimzation</fullName>
+                    <default>false</default>
+                    <label>Other Victimzation</label>
+                </value>
+                <value>
+                    <fullName>Adult Physical Abuse</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Adult Physical Abuse</label>
+                </value>
+                <value>
+                    <fullName>Adult Sexual Abuse</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Adult Sexual Abuse</label>
+                </value>
+                <value>
+                    <fullName>Animal Abuse</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Animal Abuse</label>
+                </value>
+                <value>
+                    <fullName>Bullying</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Bullying</label>
+                </value>
+                <value>
+                    <fullName>Child Sexual Abuse</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Child Sexual Abuse</label>
+                </value>
+                <value>
+                    <fullName>Domestic Violence</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Domestic Violence</label>
+                </value>
+                <value>
+                    <fullName>Hate Crime</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Hate Crime</label>
+                </value>
+                <value>
+                    <fullName>Human Trafficking (Labor)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Human Trafficking (Labor)</label>
+                </value>
+                <value>
+                    <fullName>Human Trafficking (Sexual Abuse)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Human Trafficking (Sexual Abuse)</label>
+                </value>
+                <value>
+                    <fullName>Kidnapping (Custodial)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Kidnapping (Custodial)</label>
+                </value>
+                <value>
+                    <fullName>Kidnapping (Non-Custodial)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Kidnapping (Non-Custodial)</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Stalking/Harassment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Stalking/Harassment</label>
+                </value>
+                <value>
+                    <fullName>Strangulation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Strangulation</label>
+                </value>
+                <value>
+                    <fullName>Survivor of Homicide</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Survivor of Homicide</label>
+                </value>
+                <value>
+                    <fullName>Teen Dating Violence</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Teen Dating Violence</label>
+                </value>
+                <value>
+                    <fullName>Terrorism</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Terrorism</label>
+                </value>
+                <value>
+                    <fullName>VPO Violation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>VPO Violation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Victims_Compensation_Eligibility__c</fullName>
+        <externalId>false</externalId>
+        <label>Victims Compensation Eligibility</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Eligible</fullName>
+                    <default>false</default>
+                    <label>Not Eligible</label>
+                </value>
+                <value>
+                    <fullName>Eligible</fullName>
+                    <default>false</default>
+                    <label>Eligible</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Intake</label>
+    <nameField>
+        <displayFormat>Intake - {0000000}</displayFormat>
+        <label>Intake</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Intakes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

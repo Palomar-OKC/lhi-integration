@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" 
+    access="global"
+    controller="SubmitLASOCase">
+    
+    <aura:attribute name="results" type="List" />
+    <aura:attribute name="columns" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:card title="LASO Case Submission">
+        <aura:set attribute="title">
+            <lightning:icon iconName="action:share_file" size="small" />
+            LASO Case Information
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:button aura:id="submitBtn"
+                variant="brand" 
+                label="Submit" 
+                title="Submit" 
+                onclick="{!c.handleClick}" />
+        </aura:set>
+        <lightning:datatable 
+            keyField="Id"
+            data="{!v.results}"
+            columns="{!v.columns}"
+            hideCheckboxColumn="true" />
+    </lightning:card>
+    
+</aura:component>
