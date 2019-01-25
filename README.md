@@ -1,6 +1,13 @@
 # Introduction
 The LASO Integration is a Salesforce-based solution to submit data to an LHI Endpoint for automatic form completion.
 
+## The Source
+Lightning (Salesforce Lightning) is a component-based framework for app development from [Salesforce.com](https://www.salesforce.com/products/platform/lightning/).  Lightning comprises the collection of tools and technologies behind a significant upgrade to the Salesforce1 Platform (now known as App Cloud), the company's mobile app development platform.  Lightning includes the Lightning Component Framework and some exciting tools for developers. Lightning makes it easier to build responsive applications for any device.
+The [Salesforce SOAP API](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_quickstart_intro.htm) has been used to connect to the LHI system.
+
+## The Destination
+LHI API service endpoint points are available to send data to.
+
 ## Project Structure
 The `src` folder contains a number of Salesforce metadata files for deployment to any Salesforce organization. It is divided up into three folders:
 
